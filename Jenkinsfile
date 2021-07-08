@@ -14,7 +14,7 @@ pipeline {
 			}
 		stage ('Login') {
 			steps {
-				bat 'echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u $DOCKERHUB_CREDENTIALS_USR --password-D3v0ps.2021'
+				bat 'echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u $DOCKERHUB_CREDENTIALS_USR --password-stdin'
 				}
 			}
 		stage ('Push') {
