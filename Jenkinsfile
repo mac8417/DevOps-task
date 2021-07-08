@@ -14,7 +14,7 @@ pipeline {
 			}
 		stage ('Login') {
 			steps {
-				bat 'docker login -u mcapare -p D3v0ps.2021
+				bat 'docker login -u mcapare -p D3v0ps.2021'
 				}
 			}
 		stage ('Push') {
