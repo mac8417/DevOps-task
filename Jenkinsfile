@@ -4,7 +4,7 @@ pipeline {
 		buildDiscarder(logRotator(numToKeepStr: '5'))
 	}
 	environment {
-		DOCKERHUB_CREDENTIALS = credentials('mcapare-dockerhub)
+		DOCKERHUB_CREDENTIALS = credentials('mcapare-dockerhub')
 	}
 	stages {
 		stage('Build'){
